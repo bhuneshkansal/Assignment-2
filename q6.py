@@ -1,13 +1,12 @@
-def countBits( n ):
-    count = 0
-    while n:
-        count += 1
-        n &= (n-1)
-    return count
-     
-def FlippedCount(a , b):
-    return countBits(a^b)
- 
-a = int(input("enter n1: "))
-b = int(input("enter n2: "))
-print(FlippedCount(a, b))
+print ("enter 1st number")
+number_1=int(input())
+
+print ("enter 2nd number")
+number_2=int(input())
+
+ex_or=number_1^number_2
+bin_exor=bin(ex_or)
+check_string= str(bin_exor)
+
+a=check_string.count('1')
+print(a)

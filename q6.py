@@ -1,7 +1,7 @@
-print ("enter 1st number")
+print ("enter n1")
 number_1=int(input())
 
-print ("enter 2nd number")
+print ("enter n2")
 number_2=int(input())
 
 ex_or=number_1^number_2
